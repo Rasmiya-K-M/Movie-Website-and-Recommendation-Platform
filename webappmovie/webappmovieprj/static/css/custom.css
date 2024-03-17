@@ -22,8 +22,6 @@ body {
 .my_footer{
     background-color:#cec8e6;
     height:60px;
-    position: fixed;
-    bottom: 0;
 }
 /*category*/
 .my_row_class{

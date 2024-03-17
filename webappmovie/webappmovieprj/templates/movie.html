@@ -37,7 +37,9 @@
             <p class="text-justify my_mov_text">{{movie.category}}</p>
             <p class="my_title">Trailer</p>
             <a href="{{movie.trailer}}">Click to view trailer</a><br><br>
+             {% if user.is_authenticated %}
             <a class="btn btn-secondary" href="{% url 'favouritesapp:add_to_favourites' movie.id %}">Add to Favourite</a>
+             {% endif %}
         </div>
         <br><br>
 
